@@ -74,3 +74,4 @@ void Heap::Sort() {
 		data[n - 1 - i] = tmp;
 	}*/
 }
+
