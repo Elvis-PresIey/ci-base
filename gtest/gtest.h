@@ -1,3 +1,6 @@
+#ifndef GTEST_GTEST_H_
+#define GTEST_GTEST_H_
+
 // Copyright 2005, Google Inc.
 // All rights reserved.
 //
@@ -874,7 +877,7 @@ class GTEST_1_TUPLE_(T) {
   }
 
   T0 f0_;
-};
+}
 
 template <GTEST_2_TYPENAMES_(T)>
 class GTEST_2_TUPLE_(T) {
@@ -917,7 +920,7 @@ class GTEST_2_TUPLE_(T) {
 
   T0 f0_;
   T1 f1_;
-};
+}
 
 template <GTEST_3_TYPENAMES_(T)>
 class GTEST_3_TUPLE_(T) {
@@ -954,7 +957,7 @@ class GTEST_3_TUPLE_(T) {
   T0 f0_;
   T1 f1_;
   T2 f2_;
-};
+}
 
 template <GTEST_4_TYPENAMES_(T)>
 class GTEST_4_TUPLE_(T) {
@@ -995,7 +998,7 @@ class GTEST_4_TUPLE_(T) {
   T1 f1_;
   T2 f2_;
   T3 f3_;
-};
+}
 
 template <GTEST_5_TYPENAMES_(T)>
 class GTEST_5_TUPLE_(T) {
@@ -1039,7 +1042,7 @@ class GTEST_5_TUPLE_(T) {
   T2 f2_;
   T3 f3_;
   T4 f4_;
-};
+}
 
 template <GTEST_6_TYPENAMES_(T)>
 class GTEST_6_TUPLE_(T) {
@@ -1086,7 +1089,7 @@ class GTEST_6_TUPLE_(T) {
   T3 f3_;
   T4 f4_;
   T5 f5_;
-};
+}
 
 template <GTEST_7_TYPENAMES_(T)>
 class GTEST_7_TUPLE_(T) {
@@ -1135,7 +1138,7 @@ class GTEST_7_TUPLE_(T) {
   T4 f4_;
   T5 f5_;
   T6 f6_;
-};
+}
 
 template <GTEST_8_TYPENAMES_(T)>
 class GTEST_8_TUPLE_(T) {
@@ -1187,7 +1190,7 @@ class GTEST_8_TUPLE_(T) {
   T5 f5_;
   T6 f6_;
   T7 f7_;
-};
+}
 
 template <GTEST_9_TYPENAMES_(T)>
 class GTEST_9_TUPLE_(T) {
@@ -1241,7 +1244,7 @@ class GTEST_9_TUPLE_(T) {
   T6 f6_;
   T7 f7_;
   T8 f8_;
-};
+}
 
 template <GTEST_10_TYPENAMES_(T)>
 class tuple {
@@ -1261,7 +1264,7 @@ class tuple {
       f4_(t.f4_), f5_(t.f5_), f6_(t.f6_), f7_(t.f7_), f8_(t.f8_), f9_(t.f9_) {}
 
   template <GTEST_10_TYPENAMES_(U)>
-  tuple(const GTEST_10_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
+  explicit tuple(const GTEST_10_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_), f4_(t.f4_), f5_(t.f5_), f6_(t.f6_), f7_(t.f7_), f8_(t.f8_),
       f9_(t.f9_) {}
 
@@ -2170,7 +2173,8 @@ inline void FlushInfoLog() { fflush(NULL); }
     GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
     if (::testing::internal::IsTrue(condition)) \
       ; \
-    else \
+    else
+    \
       GTEST_LOG_(FATAL) << "Condition " #condition " failed. "
 
 // An all-mode assert to verify that the given POSIX-style function
@@ -20061,3 +20065,5 @@ inline int RUN_ALL_TESTS() {
 }
 
 #endif  // GTEST_INCLUDE_GTEST_GTEST_H_
+
+#endif GTEST_GTEST_H_
