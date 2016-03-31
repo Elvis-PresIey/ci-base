@@ -1,5 +1,5 @@
-#ifndef SOLUTIONS_MYLIST_LIST_H_
-#define SOLUTIONS_MYLIST_LIST_H_
+#ifndef MYLIST_LIST_H_
+#define MYLIST_LIST_H_
 
 #pragma once
 
@@ -26,4 +26,4 @@ class Heap {
   void print() {  for(int i = 0; i < n; i++) printf("%d ", data[i]);  }
 };
 
-#endif SOLUTIONS_MYLIST_LIST_H_
+#endif MYLIST_LIST_H_
