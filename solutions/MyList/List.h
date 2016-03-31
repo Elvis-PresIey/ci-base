@@ -1,5 +1,5 @@
-#ifndef MYLIST_LIST_H_
-#define MYLIST_LIST_H_
+#ifndef SOLUTIONS_MYLIST_LIST_H_
+#define SOLUTIONS_MYLIST_LIST_H_
 
 #pragma once
 
@@ -13,7 +13,8 @@ class Heap {
 
   Heap(int* s, int n);
   ~Heap() { delete[] data; }
-  Heap(const Heap& c) {	n = c.n; d = c.d; 
+  Heap(const Heap& c) {
+    n = c.n; d = c.d;
     data = new int[n];
     for (int i = 0; i < n; i++) data[i] = c.data[i];
   }
@@ -23,7 +24,7 @@ class Heap {
   void Up(int idx);
   void Heapify();
   void Sort();
-  void print() {  for(int i = 0; i < n; i++) printf("%d ", data[i]);  }
+  void print() {  for (int i = 0; i < n; i++) printf("%d ", data[i]);  }
 };
 
-#endif // MYLIST_LIST_H_
+#endif  // SOLUTIONS_MYLIST_LIST_H_

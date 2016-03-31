@@ -11,8 +11,9 @@ Heap::Heap(int* s, int _n) {
 
 
 int Heap::Min_child(int i) {
-  if (i * d + 1 >= n) return 0;
-  else {
+  if (i * d + 1 >= n) {
+    return 0;
+  } else {
     int fi = i * d + 1;
     int li = ((i + 1) * d);    // > n) ? n : ((i + 1) * d);
     if (li >= n - 1) li = n - 1;
