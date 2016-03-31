@@ -26,4 +26,4 @@ class Heap {
   void print() {  for(int i = 0; i < n; i++) printf("%d ", data[i]);  }
 };
 
-#endif MYLIST_LIST_H_
+#endif // MYLIST_LIST_H_
