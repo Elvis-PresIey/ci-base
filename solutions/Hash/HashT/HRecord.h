@@ -1,5 +1,5 @@
-#ifndef SOLUTIONS_HASH_HASH_HRECORD_H_
-#define SOLUTIONS_HASH_HASH_HRECORD_H_
+#ifndef SOLUTIONS_HASH_HASHT_HRECORD_H_
+#define SOLUTIONS_HASH_HASHT_HRECORD_H_
 
 template<class Key, class Data>
 class HRecord {
@@ -12,4 +12,4 @@ class HRecord {
   ~HRecord();
 };
 
-#endif  // SOLUTIONS_HASH_HASH_HRECORD_H_
+#endif  // SOLUTIONS_HASH_HASHT_HRECORD_H_

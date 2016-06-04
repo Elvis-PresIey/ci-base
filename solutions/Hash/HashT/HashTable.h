@@ -1,5 +1,5 @@
-#ifndef SOLUTIONS_HASH_HASH_HASHTABLE_H_
-#define SOLUTIONS_HASH_HASH_HASHTABLE_H_
+#ifndef SOLUTIONS_HASH_HASHT_HASHTABLE_H_
+#define SOLUTIONS_HASH_HASHT_HASHTABLE_H_
 
 #include "HRecord.h"
 #include "HRecord.cpp"
@@ -32,4 +32,4 @@ class HashTable {
   ~HashTable();
 };
 
-#endif  // SOLUTIONS_HASH_HASH_HASHTABLE_H_
+#endif  // SOLUTIONS_HASH_HASHT_HASHTABLE_H_
