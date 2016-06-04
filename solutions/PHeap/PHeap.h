@@ -1,5 +1,5 @@
-#ifndef SOLUTIONS_HEAP_2_PHEAP_H_
-#define SOLUTIONS_HEAP_2_PHEAP_H_
+#ifndef SOLUTIONS_PHEAP_PHEAP_H_
+#define SOLUTIONS_PHEAP_PHEAP_H_
 
 
 
@@ -25,4 +25,4 @@ class PHeap {
   ~PHeap();
 };
 
-#endif  // SOLUTIONS_HEAP_2_PHEAP_H_
+#endif  // SOLUTIONS_PHEAP_PHEAP_H_
