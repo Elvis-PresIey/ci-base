@@ -82,6 +82,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="List.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="perc.cpp" />
   </ItemGroup>
   <ItemGroup>
